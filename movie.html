@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="head">
+                <div class="pop"><img src="logo.png" alt=""></div>
+                <div class="logo">Popcorn</div>
+            </div>
+            
+            <div class="nav-links">
+                <button id="homebtn">Home</button>
+               
+                <button id="newMovies">New</button>
+                <button id="popularMovies">Popular</button>
+                <select id="genreSelect">
+                    <option value="" class="genreMovies">Genre</option>
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                </select>
+            </div>
+            
+            <div class="searchbar">
+                <input type="text" id="searchdata" placeholder="Search for movies...">
+                <button type="submit" id="searchbtn">Search</button>
+            </div>
+            <button id="showFavorites">❤️ Favorites</button>
+        </nav>
+        <hr style="border: 0.5px solid white; margin: 0;">
+        <!-- Home Section-->
+        <div class="home"></div>
+
+        <!-- Movie Display Section -->
+        <div id="movie-container"></div>
+
+        <!-- Favorites Section (Initially Hidden) -->
+        <div id="favorites-container" style="display: none;">
+            <div id="favorites-list"></div>
+        </div>
+    </div>
+    <script src="movie.js"></script>   
+</body>
+</html>
